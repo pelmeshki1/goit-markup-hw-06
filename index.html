@@ -437,18 +437,15 @@
           <textarea
             class="modal-form-message"
             name="user_message"
+            rows="5"
             placeholder="Text input"
           ></textarea>
-          <input
-            id="user-policy"
-            class="modal-form-check-desck"
-            name="user_policy"
-            type="checkbox"
-          />
-          <label for="user-policy" class="modal-form-check-desck"
-            >I accept the terms and conditions of the <a href="">Privacy Policy</a></label
-          >
-          <button class="modal-form-submit" type="submit">Send</button>
+          <label class="modal-form-agreement">
+            <input class="modal-form-agreement-box" name="user_agreement" type="checkbox" />
+            <span class="modal-form-agreenent-text">I accept the terms and conditions of the</span
+            ><a href="">Privacy Policy</a>
+          </label>
+          <button class="modal-btn-submit btn" type="submit">Send</button>
         </form>
       </div>
     </div>
