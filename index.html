@@ -386,16 +386,19 @@
             </li>
           </ul>
         </div>
-        <div class="footer-form-all">
-          <p class="subscribe-text">Subscribe</p>
-          <div class="footer-form-wrapper">
-            <label class="footer-form-label" for="user_email">
-              <span class="foote-text-email">Email</span>
-            </label>
-            <input type="email" name="email" id="user-email" />
-            <button class="footer-btn btn" type="submit">Subscribe</button>
-          </div>
-        </div>
+        <p class="footer-subscribe-text">Subscribe</p>
+        <form class="footer-form">
+          <label class="footer-form-field"
+            ><span class="footer-form-input-desc">E-mail</span>
+            <input class="footer-rorm-email" type="email" name="email_subscribe" required />
+            <div class="subscribe-btn-container">
+              <button type="submit" class="subscribe-btn btn">Subscribe</button>
+              <svg class="subscribe-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-Framebtn"></use>
+              </svg>
+            </div>
+          </label>
+        </form>
       </div>
     </footer>
     <!-- Modal window -->
@@ -452,6 +455,16 @@
           ></textarea>
           <label class="modal-form-agreement">
             <input class="modal-form-agreement-box" name="user_agreement" type="checkbox" />
+            <svg class="modal-form-agreement-icon" width="16" height="16">
+              <use
+                class="modal-form-agreement-icon-unchecked"
+                href="./images/icons.svg#icon-unchecked"
+              ></use>
+              <use
+                class="modal-form-agreement-icon-checked"
+                href="./images/icons.svg#icon-checked"
+              ></use>
+            </svg>
             <span class="modal-form-agreement-text"
               >I accept the terms and conditions of the<a class="modal-form-agreement-link" href=""
                 >&nbsp;Privacy Policy</a
