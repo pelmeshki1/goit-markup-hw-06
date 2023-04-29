@@ -659,7 +659,7 @@ body {
   gap: 8px;
   margin-bottom: 24px;
 }
-.modal-form-agreenent-text {
+.modal-form-agreement-text {
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -668,13 +668,13 @@ body {
   color: #8e8f99;
 }
 .modal-form-agreement-link {
-  font-family: Roboto, sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.04em;
   color: var(--iris);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-form-agreement-link:hover {
+  color: var(--ocean);
+}
+
 .modal-form-agreement-box {
   appearance: none;
   width: 16px;
