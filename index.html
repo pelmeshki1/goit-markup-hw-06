@@ -386,19 +386,28 @@
             </li>
           </ul>
         </div>
-        <p class="footer-subscribe-text">Subscribe</p>
-        <form class="footer-form">
-          <label class="footer-form-field"
-            ><span class="footer-form-input-desc">E-mail</span>
-            <input class="footer-rorm-email" type="email" name="email_subscribe" required />
-            <div class="subscribe-btn-container">
-              <button type="submit" class="subscribe-btn btn">Subscribe</button>
-              <svg class="subscribe-btn-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-Framebtn"></use>
-              </svg>
+        <!-- SUBSCRIBE FORM -->
+        <div class="footer-form-container">
+          <p class="footer-subscribe-text">Subscribe</p>
+          <form class="footer-form" name="subscribe_form">
+            <div class="footer-form-wrapper">
+              <label class="footer-form-field"></label>
+              <input
+                class="footer-field-input"
+                type="email"
+                name="email_subscribe"
+                required
+                placeholder="E-mail"
+              />
+              <button type="submit" class="subscribe-btn">
+                Subscribe
+                <svg class="subscribe-btn-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-Framebtn"></use>
+                </svg>
+              </button>
             </div>
-          </label>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- Modal window -->
@@ -410,7 +419,7 @@
           </svg>
         </button>
         <strong class="modal-text">Leave your contacts and we will call you back</strong>
-        <form class="modal-form" name="contact-form">
+        <form class="modal-form" name="contact_form">
           <label class="modal-form-label">Name</label>
           <div class="modal-form-field">
             <input
@@ -453,7 +462,7 @@
             rows="5"
             placeholder="Text input"
           ></textarea>
-          <label class="modal-form-agreement">
+          <label visually-hidden class="modal-form-agreement">
             <input class="modal-form-agreement-box" name="user_agreement" type="checkbox" />
             <svg class="modal-form-agreement-icon" width="16" height="16">
               <use
