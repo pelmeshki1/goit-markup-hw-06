@@ -438,7 +438,6 @@ body {
   |============================
 */
 .footer {
-  font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -531,7 +530,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-txt-color);
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 .subscribe-btn {
   font-family: Roboto, sans-serif;
@@ -603,10 +602,12 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-  height: 576px;
+  height: 584px;
   background-color: #fcfcfc;
   padding-left: 24px;
   padding-right: 24px;
+  padding-bottom: 24px;
+  padding-top: 72px;
 }
 .modal-close-btn {
   position: absolute;
@@ -647,7 +648,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--navi-blue);
   display: block;
-  padding-top: 72px;
   margin-bottom: 16px;
   text-align: center;
 }
@@ -692,7 +692,8 @@ body {
 }
 .modal-form-message {
   display: block;
-  width: 100%;
+  width: 360px;
+  height: 120px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   outline: 2px solid transparent;
@@ -715,7 +716,24 @@ body {
 }
 .modal-btn-submit {
   display: block;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  min-width: 169px;
+  min-height: 56px;
+  border: none;
+  border-radius: 4px;
   margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-btn-submit:hover,
+.modal-btn-submit:focus {
+  background-color: #404bbf;
 }
 .modal-form-agreement {
   display: flex;
