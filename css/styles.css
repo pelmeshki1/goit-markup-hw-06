@@ -768,6 +768,12 @@ body {
   background-color: var(--ocean);
   border-color: var(--ocean);
 }
+.modal-form-agreement-box:focus + .modal-form-agreement-icon {
+  border-color: #404bbf;
+  outline-color: #404bbf;
+  fill: #404bbf;
+  color: #4d5ae5;
+}
 /*  */
 .modal-form-agreement-icon-unchecked {
   opacity: 1;
@@ -780,6 +786,20 @@ input[type='checkbox']:checked + .modal-form-agreement-icon > .modal-form-agreem
 }
 input[type='checkbox']:checked + .modal-form-agreement-icon > .modal-form-agreement-icon-checked {
   opacity: 1;
+}
+/* для чекбоксу */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /**
   |============================
