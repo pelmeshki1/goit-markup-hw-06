@@ -802,7 +802,7 @@ input[type='checkbox']:checked + .modal-form-agreement-icon > .modal-form-agreem
   overflow: hidden;
 }
 .modal-form-agreement-box:focus ~ .modal-form-agreement-icon {
-  outline: 2px solid var(--iris);
+  border: 2px solid var(--iris);
   border-radius: 4px;
 }
 /**
