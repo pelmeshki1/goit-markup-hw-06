@@ -801,6 +801,7 @@ input[type='checkbox']:checked + .modal-form-agreement-icon > .modal-form-agreem
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /**
   |============================
   | PORTFOLIO
